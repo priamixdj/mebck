@@ -9,7 +9,8 @@
     animation: alternate;
 }
 
-.center{ display: flex; 
+.center{ 
+    display: flex; 
     align-items: center; 
     justify-content: center; 
     text-align: center
@@ -51,12 +52,6 @@
     float: right;
 }
 
-.foto2_class{
-    width: 50%;
-    height: 30%;
-    display: flex;
-    margin-left: 15%;
-}
 
 
 .fade-in{
@@ -74,21 +69,23 @@
 
 
 
-
+    
+.photo_div{
+    display: flex; 
+    width: 50vw; 
+    height: 25vw; 
+    align-items: center;
+}
 
 #foto1{
     border-radius: 10%;
-    width: 55%;
-    margin-left: 60%;
+    width: 13vw;
     margin-left: 30%;
-    margin-top: 40px;
-    
 }
 #foto2{
     border-radius: 10%;
-    width: 50%;
-    margin-left: 30%;
-    margin-top: 40px;
+    width: 15vw;
+    margin-left: 7.5%;
 }
 
 .buttonSocial{
@@ -331,21 +328,18 @@ ul#menu li a {
     h1{
         scale: 0.8;
     }
+    
+    .photo_div{
+        display: flex; 
+        width: 70vw; 
+        height: 50vw; 
+        align-items: center;
+    }
+    #foto1, #foto2{
+        width: 25vw;
+    }
 
-    #foto1{
-        border-radius: 10%;
-        margin-top: 40%;
-        width: 70%;
-        height: 50%;
-    }
-    #foto2{
-        border-radius: 10%;
-        margin-left: 2vh;
-        margin-top: 40%;
-        width: 70%;
-        height: 50%;
-        
-    }
+
     .buttonSocial{
         border-radius: 10px;
         width: 20vh;
