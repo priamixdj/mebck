@@ -11,7 +11,7 @@
 
 
 // creato con EmailJS
-document.getElementById('myForm').addEventListener('submit', async function(e) {
+document.getElementById('contatti_form').addEventListener('submit', async function(e) {
     e.preventDefault();
 
     var luogo = await getLocationString();  

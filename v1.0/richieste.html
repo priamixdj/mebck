@@ -42,7 +42,7 @@
     </div>
 
     <div id="form_richieste">
-        <form id="myForm">
+        <form id="contatti_form">
             <label for="nome">Nome</label>
             <input id="nome" name="nome" type="text" required> 
 
@@ -78,7 +78,7 @@
 
     <!-- Fogli google -->
     <script>
-        document.getElementById('myForm').addEventListener('submit', function(e) {
+        document.getElementById('contatti_form').addEventListener('submit', function(e) {
         e.preventDefault();
 
             const formData = new FormData(this);

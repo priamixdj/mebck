@@ -146,10 +146,26 @@
         </section>
         
         <section class="contattami" id="contattami">
-            <h1>Contattami</h1>
+            <h1>Contatti</h1>
 
-            <h2>Mail <a aria-label="matteopriarolo@gmail.com" target="_blank" href="mailto:matteopriarolo@gmail.com">✉️ <i>matteopriarolo@gmail.com</i></a></h2>
-            <h2>Instagram <a aria-label="mattepriagggofficial" target="_blank" href="https://instagram.com/mattepriaggg_official"> 📲 <i>@mattepriaggg_official</i></a></h2>
+            <h2><p>Mail:</p> <a aria-label="matteopriarolo@gmail.com" target="_blank" href="mailto:matteopriarolo@gmail.com"> <i>matteopriarolo@gmail.com</i></a></h2>
+            <h2><p>Instagram:</p> <a aria-label="mattepriagggofficial" target="_blank" href="https://instagram.com/mattepriaggg_official"> <i>@mattepriaggg_official</i></a></h2>
+
+            <form id="contatti_form" class="center">
+                <label for="from_mail">la tua mail</label>
+                <input id="from_mail" name="from_mail" type="text" required> 
+                <br>
+
+                <label for="from_name">il tuo nome</label> 
+                <input id="from_name" name="from_name" type="text" required>
+
+                <label for="dove">Messaggio</label> 
+                <textarea id="messaggio" name="messaggio" type="text" value=""> </textarea>
+
+                <input id="submit" type="submit" value="INVIA">
+
+                <a style="justify-content: center;" href="index.html" class="cont-bio">Torna alla home</a>
+            </form>
 
 
             <!-- <form action="" id="form" class="center">
@@ -171,11 +187,28 @@
             import emailjs from 'https://cdn.emailjs.com/sdk/3.11/email.min.js';
             emailjs.init('gs2NywfF3uc76nCPq');
         </script> -->
+        
 
     </body>
 
     <script src="assets/js/index.js"></script>
     <script src="assets/js/translate.js"></script>
+
+    
+    <script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <!-- MAIL -->
+    <script src="mail.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "M70jPPH-NE_KruV9-",
+            });
+        })();
+    </script>
 
     <!-- <script src="assets/js/mail.js"></script> -->
 
