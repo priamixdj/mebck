@@ -42,7 +42,11 @@
     </div>
 
     <div id="form_richieste">
+
         <form id="contatti_form">
+
+        <form id="myForm">
+
             <label for="nome">Nome</label>
             <input id="nome" name="nome" type="text" required> 
 
@@ -78,7 +82,11 @@
 
     <!-- Fogli google -->
     <script>
+
         document.getElementById('contatti_form').addEventListener('submit', function(e) {
+
+        document.getElementById('myForm').addEventListener('submit', function(e) {
+
         e.preventDefault();
 
             const formData = new FormData(this);
@@ -115,4 +123,3 @@
     
 </body>
 </html>
-
